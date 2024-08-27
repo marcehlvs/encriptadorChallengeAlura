@@ -1,0 +1,171 @@
+
+body {
+    background: #FFEBE4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+#logo {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.text-input {
+    width: 100%;
+    max-width: 600px;
+    height: 48px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #0A3871;
+    background: #FFEBE4;
+    border: 2px solid #0A3871;
+    border-radius: 8px;
+    outline: none;
+}
+
+.label-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+#imgInfo {
+    width: 20px;
+    height: 20px;
+}
+
+.info {
+    font-size: 1rem;
+    color: red;
+    opacity: 0.8;
+}
+
+/* Botones */
+#botones {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#btn-encriptar, #btn-desencriptar {
+    padding: 15px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#btn-encriptar {
+    background: #F0A8D0;
+    border: 1px solid #F0A8D0;
+}
+
+#btn-encriptar:hover {
+    background: #FFC6C6;
+}
+
+#btn-desencriptar {
+    background: #F7B5CA;
+    border: 1px solid #0A3871;
+}
+
+#btn-desencriptar:hover {
+    background: #FFEBD4;
+}
+
+
+#cajaR {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.88);
+    border-radius: 32px;
+}
+
+.texto1, .texto2 {
+    text-align: center;
+    margin: 10px auto;
+    color: #495057;
+}
+
+.texto1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.texto2 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#msg {
+    visibility: hidden;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #495057;
+    border: none;
+    outline: none;
+}
+
+/* Botón Copiar */
+#btn-copy {
+    visibility: hidden;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto 0;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    #botones {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+
+    #logo {
+        max-width: 80px;
+    }
+
+    .text-input, #cajaR, #btn-encriptar, #btn-desencriptar, #btn-copy {
+        max-width: 100%;
+        width: 100%;
+    }
+}
